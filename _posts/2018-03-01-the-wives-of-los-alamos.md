@@ -9,7 +9,7 @@ size:   "square"
 Cover design for a book about the wives of the scientists who developed the atomic bomb at Los Alamos.
 
 <div class="gallery full">
-	<img src="{{ site.baseurl }}/images/alamos/alamos-stacked.png" alt="Mockup of the books with the front, back and spine designs.">
+	<img src="{{ site.baseurl }}/images/alamos/alamos-stacked.jpg" alt="Mockup of the books with the front, back and spine designs.">
 </div>
 
 <div class="gallery half both">
