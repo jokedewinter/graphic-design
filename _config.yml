@@ -3,7 +3,7 @@ title: Graphic Design
 email: joke@jokedewinter.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Student briefs in graphic design from a three month course at Shillington in New York.
-baseurl: ''
+baseurl: '/design'
 url: ""
 twitter_username: jokedewinter
 github_username:  jokedewinter
