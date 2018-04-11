@@ -1,0 +1,32 @@
+
+{% include header.html %}
+
+{{ page.content | markdownify }}
+
+<section class="projects">
+	
+	{% assign sorted = site.posts %}
+	{% for post in sorted %}
+			
+		<article class="project {{ post.size }}">
+			<a href="{{ site.baseurl }}{{ post.url }}">
+				{% if post.img %}
+				<figure>
+					<img src="{{ site.baseurl }}/images/{{ post.img}}" alt="{{ post.alt }}	">
+				</figure>
+				{% endif %}
+
+
+				<div class="project__meta">
+					<span>
+						<h3 id="#{{ post.title }}">{{ post.title }}</h3>
+						<p>{{ post.type }}</p>
+					</span>
+				</div> 
+			</a>
+		</article><!-- .project -->
+	
+	{% endfor %}		
+</section><!-- .projects -->
+
+{% include footer.html %}

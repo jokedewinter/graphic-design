@@ -1,0 +1,19 @@
+
+@mixin font-body() { 
+	font-family: 'Open Sans', 'ProximaNovaT-Thin', 'Open Sans', sans-serif; 
+	font-style: normal;
+	font-weight: 300;
+}
+
+@mixin font-bold() { 
+	font-family: 'Open Sans', 'ProximaNova-Bold', 'Open Sans', sans-serif; 
+	font-style: normal;
+	font-weight: 700;
+}
+
+@mixin font-title() { 
+	font-family: 'Open Sans', 'ProximaNova-Bold', 'Open Sans', sans-serif; 
+	font-style: normal;
+	font-weight: 900;
+}
+

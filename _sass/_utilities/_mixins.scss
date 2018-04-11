@@ -1,0 +1,96 @@
+
+// -------------------------------------------------------------------------------------------------
+// Rem output with px fallback
+// Going with plain pixel values for the $size setting
+// -------------------------------------------------------------------------------------------------
+
+@mixin font-size($size: 16) {
+	font-size: $size * 1px;
+	font-size: ($size / 10) * 1rem;
+}
+
+// -------------------------------------------------------------------------------------------------
+// No bullets
+// Use on li element
+// The :before part adds zero-width space and makes it accessible
+// -------------------------------------------------------------------------------------------------
+
+@mixin no-bullets() {
+	list-style-type: none;
+	&:before { content: "\200B"; }
+}
+
+// -------------------------------------------------------------------------------------------------
+// Fancy CSS things
+// -------------------------------------------------------------------------------------------------
+
+@mixin text-shadow ($string: 0 1px 3px rgba(0, 0, 0, 0.9)) {
+	text-shadow: $string;
+}
+
+@mixin border-radius($radius: 5px) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin border-radiuses($topleft: 0, $topright: 0, $bottomright: 0, $bottomleft: 0) {
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-webkit-border-top-left-radius: $topleft;
+
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	border-top-left-radius: $topleft;
+}
+
+@mixin box-shadow ($string) {
+	-webkit-box-shadow: $string;
+	-moz-box-shadow: $string;
+	box-shadow: $string;
+}
+
+@mixin columns($count: 3, $gap: 10) {
+	-webkit-column-count: $count;
+	-moz-column-count: $count;
+	column-count: $count;
+
+  -webkit-column-gap: $gap;
+	-moz-column-gap: $gap;
+	column-gap: $gap;
+}
+
+@mixin transform($string) {
+	-webkit-transform: $string;
+	-moz-transform: $string;
+	-ms-transform: $string;
+	-o-transform: $string;
+	transform: $string;
+}
+
+@mixin transition ($property, $duration, $timing) {
+	-webkit-transition-property: $property;
+	-moz-transition-property: $property;
+	-ms-transition-property: $property;
+	-o-transition-property: $property;
+	transition-property: $property;
+
+	-webkit-transition-duration: 	$duration;
+	-moz-transition-duration: $duration;
+	-ms-transition-duration: $duration;
+	-o-transition-duration: $duration;
+	transition-duration: $duration;
+
+	-webkit-transition-timing-function: $timing;
+	-moz-transition-timing-function: $timing;
+	-ms-transition-timing-function: $timing;
+	-o-transition-timing-function: $timing;
+	transition-timing-function: $timing;
+}

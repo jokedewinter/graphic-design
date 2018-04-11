@@ -1,0 +1,29 @@
+/**
+ * -------------------------------------------------------------------------------------------------
+ * .projects
+ *
+ * All project thumbnails have a 3:2 ratio
+ * -------------------------------------------------------------------------------------------------
+ */
+ 
+.projects {
+	
+	/* 600px */
+	@media screen and ( min-width: 37.50em ) {
+		display: flex;
+		flex-direction: flex-row;
+		//flex-wrap: wrap;
+		//justify-content: space-between;
+		
+		@supports (display: grid) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-flow: dense;
+
+			.square { grid-column: span 1; }
+			.wide { grid-column: span 2; }
+		}
+	}
+}
+
+

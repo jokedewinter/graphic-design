@@ -1,0 +1,59 @@
+/**
+ * -------------------------------------------------------------------------------------------------
+ * .gallery
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.gallery, .full {
+	float: left;
+	width: 100%;
+	clear: both;
+	margin: 2em 0;
+}
+
+
+.half img {
+	width: 50%;
+	float: left;
+}
+
+.left img {
+	float: left;
+}
+
+.right img {
+	float: right;
+}
+
+.three img  {
+	max-width: 30%;
+	margin: 0 1%;
+	float: left;
+}
+
+.five img  {
+	max-width: 18%;
+	margin: 0 1%;
+	float: left;
+}
+/*
+.journey {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	display: block;
+	float: left;
+	
+	#phone {
+		width: auto;
+		max-height: 500px;
+	}
+}
+*/
+/*
+#phone {
+	width: 416px; 
+	height: 850px; 
+    position: relative;
+}
+*/

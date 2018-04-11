@@ -1,0 +1,75 @@
+
+/**
+ * -------------------------------------------------------------
+ * Reset
+ * CSS Reset for minimalists
+ * Source: http://allthingssmitty.com/2017/01/09/css-reset-for-minimalists/
+ * ------------------------------------------------------------------------ */
+
+* {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	-webkit-text-size-adjust: 100%; 
+
+	margin: 0;
+	padding: 0;
+}
+
+article, aside, footer, header, main, nav, section { display: block; }
+
+/**
+ * ------------------------------------------------------------- 
+ * General settings
+ * ------------------------------------------------------------- */
+
+html {
+	font-size: 62.5%;
+	
+	/* 
+	This together with the overflow-x on body is to stop the window scrolling 
+	horizontally when there are background pictures flowing outside the viewport.
+	*/
+	overflow-x: hidden;
+}
+
+body { 
+	width: 100%;
+	@include font-body();
+	@include font-size(16);
+	line-height: 1.5;
+	background: $col-page;
+	color: $col-text;
+	
+	overflow-x: hidden;
+}
+
+/* Screen reader text
+ * ------------------------------------------------------------- */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Support a widely-adopted but non-standard selector for text selection styles
+ * to achieve a better experience. See https://core.trac.wordpress.org/ticket/25898.
+ * -------------------------------------------------------------------------------------------------
+ */
+
+::selection {
+	background: $col-brand;
+	color: $col-text-reverse;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: $col-brand;
+	color: $col-text-reverse;
+	text-shadow: none;
+}

@@ -1,0 +1,58 @@
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Just links
+ * -------------------------------------------------------------------------------------------------
+ */
+
+a {
+	position: relative;
+	text-decoration: none;
+	border-bottom: 1px solid $col-text;
+	color: $col-text;
+
+	&:hover {
+		border-bottom: 1px solid lighten($col-text, 25%);
+		color: lighten($col-text, 25%);
+	}
+
+	&:hover { outline: 0; }
+	.project & { border-bottom: none; }
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * .nav__footer
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.nav__footer  { margin-bottom: 1em; }
+
+.nav__footer p {
+	@include font-size(12);
+	@include font-bold();
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1;
+	display: inline-block;
+}
+
+.nav__footer p { 
+	margin-right: 1em;
+	padding: 0.3em 
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Other links
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.style-as-link {
+	@include font-size(12);
+	@include font-bold();
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.7;
+	display: inline-block;
+	border-bottom: 1px solid $col-text;
+}

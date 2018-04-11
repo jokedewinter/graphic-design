@@ -1,0 +1,48 @@
+/**
+ * -------------------------------------------------------------------------------------------------
+ * .site__header
+ * -------------------------------------------------------------------------------------------------
+ */
+ 
+ .site__header {
+ 	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	//justify-content: space-between;
+
+	margin-bottom: 3em;
+	padding-bottom: 1em;
+	//border-bottom: 1px solid $col-border;
+	
+	@supports (display: grid) {
+		display: grid;
+		grid-template-columns: (25%, auto);
+		grid-template-rows: (auto, 100px);
+		
+		.site__banner 	{ grid-column: 1 / 2; grid-row: 2 / span 1; }
+		.site__nav 		{ grid-column: 2; grid-row: 2 / span 1; }
+		#hello 			{ grid-column: 1; grid-row: 1 / span 2; }
+	}
+ 	
+	.site__banner {
+		position: relative;
+		z-index: 100;
+		display: flex;
+		flex-direction: column-reverse;
+	 	border-bottom: none;
+ 		width: 9em; 		
+	 }
+ 	
+ 	h1 {
+		@include font-size(10);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+ 		text-align: right;
+ 		margin-top: -2em;
+ 	}
+
+	img {
+ 		margin-bottom: 0.5em;
+ 	}
+ }
+ 

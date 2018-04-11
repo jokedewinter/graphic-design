@@ -1,0 +1,23 @@
+
+.ie {
+
+  svg desc {
+    display: none;
+    height: 0;
+  }
+
+  .about {
+    display: block;
+    height: auto;
+    opacity: 1;
+    margin-bottom: 2em;
+    padding: 2em;
+    border-top: 1px solid $col-border;
+    border-bottom: 1px solid $col-border;
+  }
+
+  .about__close {
+    display: none;
+  }
+
+}
