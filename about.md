@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Hello
 permalink: /about/
 img:    hello-summer.jpg
 alt:	Joke De Winter sitting on a bench at a bus station in Boston.
@@ -13,7 +13,6 @@ I did a degree in IT, but in the end life as a programmer didn't appeal. I did a
 All well and good, but something was missing. A proper grounding in graphic design. So I went to New York and did an intensive graphic design course at Shillington. Not quite a degree, but much better and way faster.
 
 Get in touch: <a href="mailto:joke@jokedewinter.co.uk">joke@jokedewinter.co.uk
-
 
 <!--
 ## another heading
