@@ -9,3 +9,38 @@
 	padding-top: 4em;
 	border-top: 1px solid $col-text-light;
 }
+
+.colophon__social {
+	ul {
+		list-style: none;
+		margin: 0; }
+	
+	float: right;
+	text-align: right;
+	width: 30%;
+	
+	li {
+		display: inline-block;
+		margin: 0 0.7em 0.875em 0;
+	}
+	
+	a {
+		font-weight: normal;
+		border-bottom: none;
+	}
+	
+	.svg__icon {
+		margin-left: -10px;
+		width: 42px;
+		height: 42px;
+		fill: $col-text;
+		display: inline-block;
+		vertical-align: middle;
+	}
+		
+}
+
+
+	
+	
+	
