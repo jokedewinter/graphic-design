@@ -14,11 +14,7 @@
 	ul {
 		list-style: none;
 		margin: 0; }
-	
-	float: right;
-	text-align: right;
-	width: 30%;
-	
+		
 	li {
 		display: inline-block;
 		margin: 0 0.7em 0.875em 0;
@@ -40,6 +36,19 @@
 		
 }
 
+@media screen and ( min-width: 37.50em ) {
+	.smallprint { 
+		width: 60%;
+		float: left;
+	}
+	
+	.colophon__social {
+		float: right;
+		text-align: right;
+		width: 30%;
+	}		
+		
+}
 
 	
 	
