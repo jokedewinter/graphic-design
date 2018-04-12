@@ -39,6 +39,11 @@
 	//margin: 0 auto;
 }
 
+@media screen and ( max-width: 699px ) {
+	.nav__excerpt.next a * { float: right; }
+	
+}
+	
 @media screen and ( min-width: 700px ) {
 
 	.project__nav { grid-template-columns: repeat(2, 1fr); }
