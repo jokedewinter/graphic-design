@@ -1,22 +1,18 @@
 
 <nav class="project__nav">
 	
-	<!--{% if page.previous.url %}-->
-		<article class="nav__excerpt previous">
-			<a href="{{ site.baseurl }}{{ page.previous.url }}" class="project__meta">
-				<h3 id="#{{ post.title }}">{{ page.previous.title }}</h3>
-				<p>{{ page.previous.type }}</p>
+	
+	{% assign sorted = site.posts %}
+	{% for post in sorted %}
+			
+		<article class="nav__excerpt">
+			<a href="{{ site.baseurl }}{{ post.url }}" class="project__meta">
+				
+						<h3 id="#{{ post.title }}">{{ post.title }}</h3>
+						<p>{{ post.type }}</p>
 			</a>
-		</article>
-	<!--{% endif %}-->
-
-	{% if page.next.url %}
-		<article class="nav__excerpt next">
-			<a href="{{ site.baseurl }}{{ page.next.url }}" class="project__meta">
-				<h3 id="#{{ post.title }}">{{ page.next.title }}</h3>
-				<p>{{ page.next.type }}</p>
-			</a>
-		</article>
-	{% endif %}
+		</article><!-- .nav__excerpt -->
+	
+	{% endfor %}
 
 </nav><!-- .project__nav -->
