@@ -41,6 +41,8 @@ p {
 	}
 
 	.about & { @include font-size(14); }
+	
+	h2 + & { max-width: 50%; }
 }
 
 strong { @include font-bold(); }
