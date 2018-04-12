@@ -15,7 +15,6 @@
 
 /* Faux columns */
 .nav__excerpt {
-	padding: 3em 0;
 	
 	a > * {
 		border-color: $col-text;
@@ -49,14 +48,9 @@
 	
 @media screen and ( min-width: 700px ) {
 
-	.project__nav { grid-template-columns: repeat(2, 1fr); }
-	
-	.previous { 
-		grid-column: 1;
+	.project__nav { 
+		grid-template-columns: repeat(4, 1fr); 
+		grid-gap: 3em;
 	}
 	
-	.next { 
-		grid-column: 2; 
-		text-align: right;
-	}
 }
