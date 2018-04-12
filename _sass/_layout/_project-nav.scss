@@ -40,7 +40,10 @@
 }
 
 @media screen and ( max-width: 699px ) {
-	.nav__excerpt.next a * { float: right; }
+	.nav__excerpt.next a * { 
+		clear: both;
+		float: right; 
+	}
 	
 }
 	
