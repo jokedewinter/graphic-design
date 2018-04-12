@@ -6,7 +6,7 @@ img:    alamos-website-featured.jpg
 alt:	Handmade book cover design for The Wives Of Los Alamos by TheaShea Nesbit. 
 size:   "square"
 ---
-Cover design for a book about the wives of the scientists who developed the atomic bomb at Los Alamos.
+Cover design for a book about the wives of the scientists who developed the atomic bomb at Los Alamos. Student brief from Shillington.
 
 <div class="gallery full">
 	<img src="{{ site.baseurl }}/images/alamos/alamos-stacked.jpg" alt="Mockup of the books with the front, back and spine designs.">
