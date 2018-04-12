@@ -26,58 +26,24 @@
 				margin-top: 0.875em;
 			}
 		}
-	}
-
-	figure {
-		max-width: 100vw;
-		max-height: 50vh;
-		overflow: hidden;
-		margin: 0 calc(-50vw + 50%) 2em calc(-50vw + 50%);
-		
-		display: flex;
-		justify-content: center;
-		align-content: center;
-		align-items: center;
-
-		img { 
-			width: 100%;
-			max-width: none !important;
-		}
-	}
-
+	}	
 	
-	figure + * {
-		max-width: 35em;
-	}
-	
-	img {
-		//max-width: 50%; float: left;
-	}
-	
-	p {
-		max-width: 50%;
-	}
-	
+	&.project p { max-width: 50%; }
 }
-
 
 /**
  * -------------------------------------------------------------------------------------------------
- * .archive__list
+ * .post__content
  * -------------------------------------------------------------------------------------------------
  */
 
-.archive__list {
-	margin-top: 2em;
-
-	li {
-		@include no-bullets();
-		margin: 0.5em 0;
-
-		time:before {
-			content: "\2014";
-			display: inline-block;
-			margin: 0 0.5em;
-		}
+.post__content {
+	width: 100%;	
+	display: flex;
+	flex-direction: flex-row;
+	
+	figure {
+		min-width: 33%;
+		margin-right: 3em;
 	}
 }

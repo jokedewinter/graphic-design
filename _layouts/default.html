@@ -10,6 +10,7 @@
 			
 		<article class="project {{ post.size }}">
 			<a href="{{ site.baseurl }}{{ post.url }}">
+				
 				{% if post.img %}
 				<figure>
 					<img src="{{ site.baseurl }}/images/{{ post.img}}" alt="{{ post.alt }}	">
@@ -26,7 +27,8 @@
 			</a>
 		</article><!-- .project -->
 	
-	{% endfor %}		
+	{% endfor %}
+	
 </section><!-- .projects -->
 
 {% include footer.html %}

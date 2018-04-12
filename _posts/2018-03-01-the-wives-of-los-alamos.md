@@ -3,7 +3,7 @@ layout: project
 title:  "The Wives of Los Alamos"
 type:	"handmade"
 img:    alamos-website-featured.jpg
-alt:	Book cover for The Wives Of Los Alamos by TheaShea Nesbit. 
+alt:	Handmade book cover design for The Wives Of Los Alamos by TheaShea Nesbit. 
 size:   "square"
 ---
 Cover design for a book about the wives of the scientists who developed the atomic bomb at Los Alamos.
