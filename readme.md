@@ -1,4 +1,4 @@
-# Winter in New York
-Documenting an adventure in New York.
+# Graphic Design portfolio
+Student design briefs from the Shillington Graphic Design course in New York.
 
-[View the site](https://jokedewinter.github.io/winter-in-newyork/)
+[View the site](https://jokedewinter.github.io/design/)
