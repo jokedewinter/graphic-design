@@ -41,6 +41,8 @@
 }
 
 @media screen and ( max-width: 699px ) {
+	.nav__excerpt { padding: 2em 0; }
+	
 	.nav__excerpt.next a * { 
 		clear: both;
 		float: right; 
