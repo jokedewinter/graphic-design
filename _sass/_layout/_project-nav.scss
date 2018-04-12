@@ -25,6 +25,8 @@
 		border-color: $col-text-light;
 		color: $col-text-light;
 	}
+	
+	h3 { min-height: 85px; }
 }
 
 //.previous { background: lighten($col-brand-accent, 3%); }
