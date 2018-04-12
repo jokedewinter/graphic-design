@@ -1,24 +1,18 @@
 
 @mixin font-body() { 
-	font-family: 'Poppins', 'Encode Sans Semi Expanded', 'Libre Franklin', 'Poppins', 'Open Sans', sans-serif; 
+	font-family: 'Poppins', sans-serif; 
 	font-style: normal;
 	font-weight: 300;
 }
 
 @mixin font-bold() { 
-	font-family: 'Poppins', 'Encode Sans Semi Expanded', 'Libre Franklin', 'Poppins', 'Open Sans', sans-serif; 
+	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 }
 
 @mixin font-title() { 
-	font-family: 'Poppins', 'Encode Sans Semi Expanded', 'Libre Franklin', 'Open Sans', sans-serif; 
+	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 900;
 }
-
-/*
-font-family: 'Poppins', sans-serif;
-font-family: 'Libre Franklin', sans-serif;
-font-family: 'Encode Sans Semi Expanded', sans-serif;
-*/

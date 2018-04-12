@@ -8,6 +8,7 @@
 .content {		
 	
 	header {
+		width: 45%;
 		display: flex;
 		flex-direction: column-reverse;
 		
@@ -29,6 +30,7 @@
 	}	
 	
 	&.project p { max-width: 50%; }
+	
 }
 
 /**
@@ -38,12 +40,19 @@
  */
 
 .post__content {
-	width: 100%;	
-	display: flex;
-	flex-direction: flex-row;
 	
 	figure {
-		min-width: 33%;
-		margin-right: 3em;
+		margin-bottom: 2em;
+	}
+	
+	@media screen and ( min-width: 37.50em ) {
+		width: 100%;	
+		display: flex;
+		flex-direction: flex-row;
+		
+		figure {
+			min-width: 33%;
+			margin-right: 3em;
+		}
 	}
 }
