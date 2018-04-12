@@ -9,14 +9,24 @@ h5, h6, p { line-height: 1.7; }
 
 h1 {
 	@include font-body();
-	@include font-size(64);
+	@include font-size(48);
 	margin-bottom: 0.5em;
 
+	@media screen and ( min-width: 37.50em ) {
+		@include font-size(64);	
+	}
 }
 
 h2, h3, h4, h5, h6 { margin-bottom: 0.5em; }
 
-h2 { @include font-size(64); @include font-body(); }
+h2 { 	
+	@include font-size(48); 
+	@include font-body(); 
+	
+	@media screen and ( min-width: 37.50em ) {
+		@include font-size(64);	
+	}
+}
 h3 { @include font-size(24); @include font-body(); }
 h4 { @include font-size(18); }
 h5 { @include font-size(14); }
@@ -42,7 +52,10 @@ p {
 
 	.about & { @include font-size(14); }
 	
-	h2 + & { max-width: 50%; }
+	@media screen and ( min-width: 37.50em ) {
+		h2 + & { max-width: 50%; }
+	}
+	
 }
 
 strong { @include font-bold(); }
